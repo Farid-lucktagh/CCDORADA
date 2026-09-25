@@ -10,6 +10,7 @@ export default function RootLayout() {
       <SafeAreaProvider>
         <Stack screenOptions={{ headerShown: false }}>
           <Stack.Screen name="index" />
+          <Stack.Screen name="loading" options={{ presentation: 'modal', gestureEnabled: false }} />
         </Stack>
         <StatusBar style="auto" />
       </SafeAreaProvider>
